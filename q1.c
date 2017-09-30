@@ -19,11 +19,8 @@ int main ()
 		int *a1 = malloc(sizeof(int) * n);
 		int *a2 = malloc(sizeof(int) * n);
 
-		for (int i = 0; i < n; i++)
-			fscanf(fp, "%d", &a1[i]);
-		
-		for (int i = 0; i < n; i++)
-			fscanf(fp, "%d", &a2[i]);
+		for (int i = 0; i < n; i++) fscanf(fp, "%d", &a1[i]);
+		for (int i = 0; i < n; i++) fscanf(fp, "%d", &a2[i]);
 
 		q1(n, a1, a2);
 		free(a1);

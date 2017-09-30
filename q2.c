@@ -38,13 +38,15 @@ void q2 (char *str)
 
 	for (int pnt = 0; str[pnt]; pnt++)
 	{
-		if (!is_int && str[pnt] >= '0' && str[pnt] <= '9') {
+		if (!is_int && str[pnt] >= '0' && str[pnt] <= '9')
+		{
 			is_int = 1;
 			current++;
 		}
 
 		is_int = 0;
-		switch(str[pnt]) {
+		switch(str[pnt])
+		{
 		case '*':
 			args[current]     *= 2;
 			args[current - 1] *= 2;

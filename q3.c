@@ -83,7 +83,8 @@ int check_cache (const char *text)
 	int i = cache_len;
 	while (i--)
 	{
-		if (!strncmp(text, IDX(cache, i), MAX_LEN)) {
+		if (!strncmp(text, IDX(cache, i), MAX_LEN))
+		{
 			cache_add(text);
 			return CACHE_HIT;
 		}

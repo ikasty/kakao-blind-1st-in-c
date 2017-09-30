@@ -47,7 +47,8 @@ int main ()
 }
 
 enum status {END, START};
-struct q {
+struct q
+{
 	double val;
 	enum status start;
 };

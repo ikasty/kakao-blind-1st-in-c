@@ -71,14 +71,16 @@ void q4 (int n, int t, int m, char **timetable)
 			if (bus < user[pnt]) break; // bye bye bus
 			cap--;
 
-			if (last < user[pnt]) {
+			if (last < user[pnt])
+			{
 				before = last;
 				last = user[pnt];
 			}
 			pnt++;
 		}
 
-		if (cap && last < bus) {
+		if (cap && last < bus)
+		{
 			before = last;
 			last = bus;
 		}

@@ -51,11 +51,14 @@ void create(char *str, char list[1000][2], int *count)
 	while (str[i])
 	{
 		char now = tolower(str[i++]);
-		if (!(now >= 'a' && now <= 'z')) {
+		if (!(now >= 'a' && now <= 'z'))
+		{
 			before = 0;
 			continue;
 		}
-		if (!before) {
+
+		if (!before)
+		{
 			before = now;
 			continue;
 		}
@@ -75,7 +78,8 @@ void q5 (char *str1, char *str2)
 	
 	create(str1, a, &cnt1);
 	create(str2, b, &cnt2);
-	if (!cnt1 && !cnt2) {
+	if (!cnt1 && !cnt2)
+	{
 		printf("%d\n", 65536);
 		return ;
 	}
@@ -89,7 +93,7 @@ void q5 (char *str1, char *str2)
 	{
 		int cmp = sort(a[p1], b[p2]);
 
-			 if (cmp < 0) p2--;
+		if      (cmp < 0) p2--;
 		else if (cmp > 0) p1--;
 		else			  p1-- & p2-- & same++;
 	}

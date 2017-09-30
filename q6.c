@@ -44,7 +44,8 @@ void q6 (int m, int n, char **arr)
 {
 	int find = 1;
 	char **set = malloc(sizeof(char *) * m);
-	for (int i = 0; i < m; i++) {
+	for (int i = 0; i < m; i++)
+	{
 		set[i] = malloc(sizeof(char) * n);
 		memset(set[i], 0, sizeof(char) * n);
 	}
@@ -90,7 +91,8 @@ void q6 (int m, int n, char **arr)
 			for (int i = m - 1; i >= 0; i--)
 			{
 				if (blank == -1 && arr[i][j] != -1) continue;
-				if (blank == -1) {
+				if (blank == -1)
+				{
 					blank = i;
 					continue;
 				}
