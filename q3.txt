@@ -1,0 +1,60 @@
+6
+3 10
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+3 9
+Jeju
+Pangyo
+Seoul
+Jeju
+Pangyo
+Seoul
+Jeju
+Pangyo
+Seoul
+2 12
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+SanFrancisco
+Seoul
+Rome
+Paris
+Jeju
+NewYork
+Rome
+5 12
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+SanFrancisco
+Seoul
+Rome
+Paris
+Jeju
+NewYork
+Rome
+2 4
+Jeju
+Pangyo
+NewYork
+newyork
+0 5
+Jeju
+Pangyo
+Seoul
+NewYork
+LA
+
