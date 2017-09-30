@@ -15,7 +15,7 @@ int trim (char *x)
 
 int main ()
 {
-	FILE *fp = fopen("q7.txt", "r");
+	FILE *fp = fopen("data/q7.txt", "r");
 	if (!fp) return -1;
 
 	int testcase;

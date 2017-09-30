@@ -5,7 +5,7 @@ void q4 (int n, int t, int m, char **timetable);
 
 int main ()
 {
-	FILE *fp = fopen("q4.txt", "r");
+	FILE *fp = fopen("data/q4.txt", "r");
 	if (!fp) return -1;
 
 	int testcase;

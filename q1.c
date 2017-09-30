@@ -5,7 +5,7 @@ void q1 (int n, int *arr1, int *arr2);
 
 int main ()
 {
-	FILE *fp = fopen("q1.txt", "r");
+	FILE *fp = fopen("data/q1.txt", "r");
 	if (!fp) return -1;
 
 	int testcase;

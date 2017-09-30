@@ -6,7 +6,7 @@ void q2 (char *str);
 
 int main ()
 {
-	FILE *fp = fopen("q2.txt", "r");
+	FILE *fp = fopen("data/q2.txt", "r");
 	if (!fp) return -1;
 
 	int testcase;
