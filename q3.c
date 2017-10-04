@@ -14,6 +14,7 @@ void init_cache (const int n)
 {
 	if (!n) return ;
 
+	// 최대 글자 * 캐시 크기만큼 1차원 배열 생성
 	cache = malloc(sizeof(char) * MAX_LEN * n);
 	memset(cache, 0, sizeof(char) * MAX_LEN * n);
 	cache_len = n;
@@ -36,6 +37,7 @@ void cache_add (const char *text)
 
 int check_cache (const char *text)
 {
+	// 캐시 체크는 뒤에서부터 전부 체크
 	int i = cache_len;
 	while (i--)
 	{
@@ -52,8 +54,10 @@ int check_cache (const char *text)
 
 void q3 (int size, char **data)
 {
+	// 캐시 생성
 	init_cache(size);
 
+	// 도시 이름을 전부 대문자화
 	for (int i = 0; data[i]; i++)
 	{
 		for (char *t = data[i]; *t; t++) *t = toupper(*t);
@@ -63,6 +67,7 @@ void q3 (int size, char **data)
 	int i = 0;
 	while (data[i])
 	{
+		// 캐시 사용해서 검색
 		sum += check_cache(data[i++]);
 	}
 

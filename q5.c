@@ -43,18 +43,23 @@ void q5 (char *str1, char *str2)
 {
 	char a[1000][2], b[1000][2];
 	int cnt1 = 0, cnt2 = 0;
-	
+
+	// 우선 별개의 집합을 생성
 	create(str1, a, &cnt1);
 	create(str2, b, &cnt2);
+
+	// 양쪽 다 원소 개수가 0개라면 종료
 	if (!cnt1 && !cnt2)
 	{
 		printf("%d\n", 65536);
 		return ;
 	}
 
+	// 정렬
 	qsort(a, cnt1, sizeof(a[0]), sort);
 	qsort(b, cnt2, sizeof(b[0]), sort);
 
+	// 교집합 개수를 계산
 	int same = 0;
 	int p1 = cnt1 - 1, p2 = cnt2 - 1;
 	while (p1 >= 0 && p2 >= 0)
